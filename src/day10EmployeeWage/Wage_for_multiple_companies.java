@@ -8,20 +8,25 @@ public class Wage_for_multiple_companies {
 
 	public static void main(String[] args) {
 		/**
-		 * initializing values for different companies
-		 * calculating their wages
+		 * 
+		 * Creating objects for different companies
+		 * initializing values for different companies calculating their wages
 		 */
-		System.out.println("Welcome to Employee Wage Problem ");
-		System.out.println("Reliance Employee Data ");
-		EmployeeWage Reliance = new EmployeeWage();
-		Reliance.Emp(20, 8, 4, 20, 100);
 
-		System.out.println("\n Flipkart Employee Data ");
-		EmployeeWage Flipkart = new EmployeeWage();
-		Flipkart.Emp(25, 10, 5, 28, 140);
+		EmployeeWage Reliance = new EmployeeWage("Reliance", 20, 20, 100);
+		EmployeeWage Flipkart = new EmployeeWage("Flipkart", 20, 20, 100);
+		EmployeeWage Amazon = new EmployeeWage("Amazon", 20, 20, 100);
+		
+		System.out.println("<<<<<Reliance Data>>>>>");
+		Reliance.Empwage();
+		System.out.println(Reliance);
 
-		System.out.println("\n Amazon Employee Data ");
-		EmployeeWage Amazon = new EmployeeWage();
-		Amazon.Emp(28, 12, 6, 25, 180);
+		System.out.println("\n<<<<<Flipkart Data>>>>>");
+		Flipkart.Empwage();
+		System.out.println(Flipkart);
+
+		System.out.println("\n<<<<<Amazon Data>>>>>");
+		Amazon.Empwage();
+		System.out.println(Amazon);
 	}
 }
